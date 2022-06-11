@@ -14,3 +14,22 @@ a {
 * {
   box-sizing: border-box;
 }
+
+*[data-hover] {
+    -webkit-text-decoration : none !important;
+    text-decoration : none !important;
+}
+
+*:hover {
+    -webkit-text-decoration : none !important;
+    text-decoration : none !important;
+}
+
+*[data-focus] {
+    box-shadow: none !important;
+}
+
+*:focus {
+    box-shadow: none !important;
+}
+

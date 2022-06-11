@@ -21,7 +21,6 @@ export default function Home() {
     const [collectionAddress, setCollectionAddress] = useState("");
     const [NFTs, setNFTs] = useState([]);
     const [fetchForCollection, setFetchForCollection] = useState(false);
-    const [currentStart, setCurrentStart] = useState(0);
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
     const fetchNFTs = async () => {
@@ -40,7 +39,7 @@ export default function Home() {
         } else {
             if(walletAddress === ""){
                 setFetchForCollection(true);
-                returnAllNFTs()
+                fetchNFTsforCollection()
             }
             else{
 
